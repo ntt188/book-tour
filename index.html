@@ -41,9 +41,15 @@
     </header>
     
     <section id="home">
+        <img src="./assets/img/slider-1.jpg" alt="slider-1" class="home__slider active">
+        <img src="./assets/img/slider-2.jpg" alt="slider-2" class="home__slider">
+        <img src="./assets/img/slider-3.jpg" alt="slider-3" class="home__slider">
+        <img src="./assets/img/slider-4.jpg" alt="slider-4" class="home__slider">
+        <img src="./assets/img/slider-5.jpg" alt="slider-5" class="home__slider">
+
         <div class="grid wide">
             <div class="row">
-                <div class="col l-6 m-6 c-10 c-o-1">
+                <div class="col l-6 l-o-0 m-6 m-o-0 c-10 c-o-1">
                     <div class="home__content">
                         <h1>Đà Nẵng</h1>
                         <p>
@@ -62,6 +68,13 @@
                 </div>
             </div>
         </div>
+        <nav class="slide-nav">
+            <div class="slide-nav__btn active"></div>
+            <div class="slide-nav__btn"></div>
+            <div class="slide-nav__btn"></div>
+            <div class="slide-nav__btn"></div>
+            <div class="slide-nav__btn"></div>
+        </nav>
     </section>
     
 
@@ -74,6 +87,29 @@
             menuBtn.classList.toggle('fa-bars');
             menuBtn.classList.toggle('fa-xmark');
             navigation.classList.toggle('active');            
+        })
+
+        // Slider
+        const sliderBtns = document.querySelectorAll('.slide-nav__btn');
+        const sliders = document.querySelectorAll('.home__slider');
+        console.log(sliders)
+        var sliderNav = function(index) {
+            sliderBtns.forEach((btn) => {
+                btn.classList.remove('active');
+            });
+            sliders.forEach((slide) => {
+                slide.classList.remove('active');
+                
+            });
+
+            sliderBtns[index].classList.add('active');
+            sliders[index].classList.add('active');
+        }
+
+        sliderBtns.forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                sliderNav(i);
+            })
         })
     </script>
 </body>

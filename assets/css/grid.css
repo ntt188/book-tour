@@ -230,6 +230,10 @@
         max-width: 100%;
     }
 
+    .m-o-0 {
+        margin-left: 0;
+    }
+
     .m-o-1 {
         margin-left: 8.33333%;
     }
@@ -382,6 +386,10 @@
         max-width: 100%;
     }
 
+    .l-o-0 {
+        margin-left: 0;
+    }
+
     .l-o-1 {
         margin-left: 8.33333%;
     }
@@ -428,14 +436,14 @@
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 25em) and (max-width: 63.9375em) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
     .wide {
         width: 644px;
     }
 }
 
 /* > PC low resolution */
-@media (min-width: 64em) and (max-width: 1239px) {
+@media (min-width: 64em) and (max-width: 77.4375em) {
     .wide {
         width: 984px;
     }
@@ -543,6 +551,10 @@
     .wide .l-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .wide .l-o-0 {
+        margin-left: 0;
     }
 
     .wide .l-o-1 {
