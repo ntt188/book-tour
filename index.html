@@ -25,6 +25,10 @@
         <div class="grid wide">
             <div class="header">
                 <a href="#" class="brand">Travel<span>Kim</span></a>
+                <div class="header__menu-btn">
+                    <!-- <i class="fa-solid fa-bars-sort"></i> -->
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <nav class="nav-header">
                     <a href="#home" class="nav-header__item">Home</a>
                     <a href="#" class="nav-header__item">About</a>
@@ -39,7 +43,7 @@
     <section id="home">
         <div class="grid wide">
             <div class="row">
-                <div class="col l-6 m-6 c-12">
+                <div class="col l-6 m-6 c-10 c-o-1">
                     <div class="home__content">
                         <h1>Đà Nẵng</h1>
                         <p>
@@ -49,7 +53,7 @@
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
-                <div class="col l-o-5 l-1 m-o-5 m-1 c-12">
+                <div class="col l-o-5 l-1 m-o-5 m-1 c-10 c-o-1">
                     <div class="home__media-icons">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -60,5 +64,17 @@
         </div>
     </section>
     
+
+    <script>
+        const headerMenuBtn = document.querySelector('.header__menu-btn');
+        const menuBtn = document.querySelector('.header__menu-btn i');
+        const navigation = document.querySelector('.nav-header');
+        headerMenuBtn.addEventListener("click", () => {
+            headerMenuBtn.classList.toggle('active');
+            menuBtn.classList.toggle('fa-bars');
+            menuBtn.classList.toggle('fa-xmark');
+            navigation.classList.toggle('active');            
+        })
+    </script>
 </body>
 </html>

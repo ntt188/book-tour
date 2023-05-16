@@ -18,6 +18,7 @@ header {
 .brand {
     color: var(--text-color);
     font-size: 2.5rem;
+    line-height: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -25,6 +26,13 @@ header {
 
 .brand span {
     color: var(--primary-color);
+}
+
+.header__menu-btn {
+    font-size: 2em;
+    color: var(--text-color);
+    margin: 5px 10px;
+    text-decoration: none;
 }
 
 .nav-header {
@@ -58,7 +66,6 @@ header {
 
 /* Home */
 #home {
-    position: relative;
     height: 100vh;
     background-color: aqua;
     display: flex;
@@ -68,6 +75,7 @@ header {
 .home__content {
     z-index: 888;
     color: var(--text-color);
+    
 }
 
 .home__content h1 {
@@ -80,7 +88,7 @@ header {
 }
 
 .home__content p {
-    margin-bottom: 65px;
+    margin-bottom: 42px;
     font-size: 1.6rem;
     text-align: justify;
 }
