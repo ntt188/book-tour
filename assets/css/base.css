@@ -1,6 +1,9 @@
 :root {
     --text-color: #f5f6eb;
     --primary-color: #2696e9;
+    --primary-color-1: #0e040c;
+    --back-color: #8aced2;
+    --back-section-color: linear-gradient(45deg, #8aced2, #047e8e);
 }
 
 * {
@@ -12,6 +15,7 @@ html {
     line-height: 1.6rem;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* btn */

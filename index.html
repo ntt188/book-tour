@@ -31,7 +31,7 @@
                 </div>
                 <nav class="nav-header">
                     <a href="#home" class="nav-header__item">Home</a>
-                    <a href="#" class="nav-header__item">About</a>
+                    <a href="#about" class="nav-header__item">About</a>
                     <a href="#" class="nav-header__item">Explore</a>
                     <a href="#" class="nav-header__item">Gallery</a>
                     <a href="#" class="nav-header__item">Contact</a>
@@ -50,8 +50,40 @@
         <div class="grid wide">
             <div class="row">
                 <div class="col l-6 l-o-0 m-6 m-o-0 c-10 c-o-1">
-                    <div class="home__content">
+                    <div class="home__content active">
                         <h1>Đà Nẵng</h1>
+                        <p>
+                            Nhắc đến Đà Nẵng nhiều người sẽ thường nghĩ ngay đến “thành phố đáng sống nhất Việt Nam” nhờ cảnh sắc, khí hậu ôn hòa, rất thích hợp để nghỉ dưỡng. Chính bởi vậy, du lịch Đà Nẵng luôn là sự lựa chọn hàng đầu của rất nhiều du khách đến
+                            để khám phá vùng đất này.
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                    <div class="home__content">
+                        <h1>Núi thần tài</h1>
+                        <p>
+                            Nhắc đến Đà Nẵng nhiều người sẽ thường nghĩ ngay đến “thành phố đáng sống nhất Việt Nam” nhờ cảnh sắc, khí hậu ôn hòa, rất thích hợp để nghỉ dưỡng. Chính bởi vậy, du lịch Đà Nẵng luôn là sự lựa chọn hàng đầu của rất nhiều du khách đến
+                            để khám phá vùng đất này.
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                    <div class="home__content">
+                        <h1>Bà nà Hill</h1>
+                        <p>
+                            Nhắc đến Đà Nẵng nhiều người sẽ thường nghĩ ngay đến “thành phố đáng sống nhất Việt Nam” nhờ cảnh sắc, khí hậu ôn hòa, rất thích hợp để nghỉ dưỡng. Chính bởi vậy, du lịch Đà Nẵng luôn là sự lựa chọn hàng đầu của rất nhiều du khách đến
+                            để khám phá vùng đất này.
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                    <div class="home__content">
+                        <h1>Phố cổ Hội An</h1>
+                        <p>
+                            Nhắc đến Đà Nẵng nhiều người sẽ thường nghĩ ngay đến “thành phố đáng sống nhất Việt Nam” nhờ cảnh sắc, khí hậu ôn hòa, rất thích hợp để nghỉ dưỡng. Chính bởi vậy, du lịch Đà Nẵng luôn là sự lựa chọn hàng đầu của rất nhiều du khách đến
+                            để khám phá vùng đất này.
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                    <div class="home__content">
+                        <h1>Cù Lao Chàm</h1>
                         <p>
                             Nhắc đến Đà Nẵng nhiều người sẽ thường nghĩ ngay đến “thành phố đáng sống nhất Việt Nam” nhờ cảnh sắc, khí hậu ôn hòa, rất thích hợp để nghỉ dưỡng. Chính bởi vậy, du lịch Đà Nẵng luôn là sự lựa chọn hàng đầu của rất nhiều du khách đến
                             để khám phá vùng đất này.
@@ -77,6 +109,37 @@
         </nav>
     </section>
     
+    <section id="about">
+        <div class="grid wide">
+            <div class="about">
+                <div class="about__header">ABOUT</div>
+                <div class="row">
+                    <div class="col l-6 l-o-0 m-6 m-o-0 c-10 c-o-1">
+                        <div class="about__avata">
+                            <img src="./assets/img/avata.avif" alt="" class="about__avata-img">
+                        </div>
+                    </div>
+                    <div class="col l-6 l-o-0 m-6 m-o-0 c-10 c-o-1">
+                        <div class="about__list">
+                            <div class="about__item">
+                                <div class="about__item-icon"><i class="fa-solid fa-user"></i></div>
+                                <label class="about__item-text" title="name">My Name</label>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item-icon"><i class="fa-solid fa-transgender"></i></div>
+                                <label class="about__item-text" title="gender">Female</label>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item-icon"><i class="fa-solid fa-phone"></i></div>
+                                <label class="about__item-text" title="phone">(+84) 864****</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script>
         const headerMenuBtn = document.querySelector('.header__menu-btn');
@@ -89,21 +152,36 @@
             navigation.classList.toggle('active');            
         })
 
+        const navBtns = document.querySelectorAll('.nav-header__item');
+        navBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                headerMenuBtn.classList.toggle('active');
+                menuBtn.classList.toggle('fa-bars');
+                navigation.classList.toggle('active');            
+                menuBtn.classList.toggle('fa-xmark');
+            })
+        })
+
+
         // Slider
         const sliderBtns = document.querySelectorAll('.slide-nav__btn');
         const sliders = document.querySelectorAll('.home__slider');
+        const contents = document.querySelectorAll('.home__content');
         console.log(sliders)
         var sliderNav = function(index) {
             sliderBtns.forEach((btn) => {
                 btn.classList.remove('active');
             });
             sliders.forEach((slide) => {
-                slide.classList.remove('active');
-                
+                slide.classList.remove('active');                
+            });
+            contents.forEach((content) => {
+                content.classList.remove('active');                
             });
 
             sliderBtns[index].classList.add('active');
             sliders[index].classList.add('active');
+            contents[index].classList.add('active');
         }
 
         sliderBtns.forEach((btn, i) => {
