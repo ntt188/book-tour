@@ -75,8 +75,8 @@
         padding: 0 4px;
     }
 
-    .about__avata {
-    }
+    /* .about__avata {
+    } */
 
     .about__list {
         align-items: center;
@@ -86,4 +86,12 @@
     .about__item {
         min-width: 200px;
     }
+
+    .explore {
+        padding: 0 4px;
+    }
+}
+
+@media (max-width: 63.9375em) {
+    
 }

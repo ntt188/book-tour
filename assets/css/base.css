@@ -4,6 +4,7 @@
     --primary-color-1: #0e040c;
     --back-color: #8aced2;
     --back-section-color: linear-gradient(45deg, #8aced2, #047e8e);
+    --back-item: #047e8e;
 }
 
 * {
