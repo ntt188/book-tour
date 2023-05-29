@@ -199,6 +199,8 @@
         const sliderBtns = document.querySelectorAll('.slide-nav__btn');
         const sliders = document.querySelectorAll('.home__slider');
         const contents = document.querySelectorAll('.home__content');
+        let sliderIndex = 0;
+
         console.log(sliders)
         var sliderNav = function(index) {
             sliderBtns.forEach((btn) => {
@@ -216,11 +218,24 @@
             contents[index].classList.add('active');
         }
 
+        
+
+        //xử lý khi click
         sliderBtns.forEach((btn, i) => {
             btn.addEventListener('click', () => {
+                sliderIndex = i;
                 sliderNav(i);
             })
-        })
+        });
+        //tự dộng chuyển slide        
+        showSlides();
+        function showSlides() {
+            sliderNav(sliderIndex);
+            sliderIndex++;
+            if(sliderIndex === sliderBtns.length) {sliderIndex = 0}
+            setTimeout(showSlides,4000);        
+        }
+        
     </script>
 </body>
 </html>
