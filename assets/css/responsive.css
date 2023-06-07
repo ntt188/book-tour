@@ -90,8 +90,18 @@
     .explore {
         padding: 0 4px;
     }
+
+    #gallery,
+    .gallery {
+        height: auto;
+        padding: 0;
+        background: transparent;
+        border-radius: none;
+    }
 }
 
 @media (max-width: 63.9375em) {
-    
+    .gallery {
+        overflow: hidden;
+    }
 }

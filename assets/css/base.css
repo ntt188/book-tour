@@ -31,7 +31,7 @@ html {
     cursor: pointer;
     color: var(--primary-color);
     background: var(--text-color);
-    display: inline-flex;
+    display: inline-block;
     justify-content: center;
     line-height: 1.6rem;
     align-items: center;

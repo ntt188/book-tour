@@ -167,7 +167,24 @@
     <section id="gallery">
         <div class="grid wide">
             <div class="gallery">
-                
+                <div class="gallery__container">
+                    <div class="horizontal"><img  src="./assets/img/gallery-1.jpg" alt=""></div>
+                    <div class="vertical"><img  src="./assets/img/gallery-7.jpg" alt=""></div>
+                    <div><img src="./assets/img/gallery-8.jpg" alt=""></div>
+                    <div class="big"><img   src="./assets/img/gallery-11.jpg" alt=""></div>
+                    <div class="horizontal"><img  src="./assets/img/gallery-2.jpg" alt=""></div>
+                    <div><img src="./assets/img/gallery-10.jpg" alt=""></div>
+                    <div class="big"><img   src="./assets/img/gallery-4.jpg" alt=""></div>
+                    <div class="vertical"><img  src="./assets/img/gallery-7.jpg" alt=""></div>
+                    <div><img src="./assets/img/gallery-9.jpg" alt=""></div>
+                    <div class="big"><img   src="./assets/img/gallery-6.jpg" alt=""></div>
+                    <div class="horizontal"><img  src="./assets/img/gallery-3.jpg" alt=""></div>                    
+                    <div><img src="./assets/img/gallery-10.jpg" alt=""></div>
+                    <div><img src="./assets/img/gallery-5.jpg" alt=""></div>
+                    <div><img src="./assets/img/gallery-10.jpg" alt=""></div>
+                    <div class="horizontal"><img  src="./assets/img/gallery-3.jpg" alt=""></div>  
+                    
+                </div>
             </div>
         </div>
     </section>
@@ -216,9 +233,7 @@
             sliderBtns[index].classList.add('active');
             sliders[index].classList.add('active');
             contents[index].classList.add('active');
-        }
-
-        
+        }        
 
         //xử lý khi click
         sliderBtns.forEach((btn, i) => {
@@ -233,7 +248,7 @@
             sliderNav(sliderIndex);
             sliderIndex++;
             if(sliderIndex === sliderBtns.length) {sliderIndex = 0}
-            setTimeout(showSlides,4000);        
+            setTimeout(showSlides,5000);        
         }
         
     </script>
